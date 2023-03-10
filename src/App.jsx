@@ -1,12 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/Header";
 
 function App() {
 
     return (
         <>
+        <Header/>
             <Routes>
               <Route index element={<h1>hello world</h1>}/>
               <Route path="movie/:id" element={<h2>movies details</h2>}/>
