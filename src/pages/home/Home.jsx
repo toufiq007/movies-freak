@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Card from "../../components/card/Card";
 
 const Home = () => {
     const [popularMovies, setPopularMovies] = useState([]);
@@ -41,7 +42,7 @@ const Home = () => {
                                 >
                                     <div className="poster-image">
                                         <img
-                                            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+                                            src={`https://image.tmdb.org/t/p/original/${movie?movie.backdrop_path:''}`}
                                             alt=""
                                         />
                                     </div>
@@ -67,6 +68,10 @@ const Home = () => {
                         );
                     })}
                 </Carousel>
+            </div>
+            <h2 style={{color:'#fff',fontSize:'4rem',margin:'2rem 3rem'}}>Popular</h2>
+            <div className="card-container">
+                {popularMovies.map(movie=> <Card movie={movie}/>)}
             </div>
         </>
     );
