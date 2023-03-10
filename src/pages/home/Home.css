@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poster-image{
+    position: relative;
+    height: 90vh;
+    object-fit: cover;
+    background: #000;
+    /* width: 70%; */
+}
+.poster-image img{
+    opacity: 0.4;
+}
+.poster-image-overlay{
+    position: absolute;
+    bottom: 10rem;
+    left: 3rem;
+    text-align: left;
+}
+ .poster-image-title{
+    font-size: 5rem;
+    text-align: left;
+    text-shadow: 1px 1px 10px #222;
+    margin-bottom: 1rem;
+}
+.poster-image-runtime{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+.poster-image-rating{
+    margin-left: 2.5rem;
+}
+.poster-image-description{
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
