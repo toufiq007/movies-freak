@@ -30,7 +30,7 @@ const Home = () => {
                     showStatus={false}
                 >
                     {popularMovies.map((movie) => {
-                        console.log(movie);
+                        // console.log(movie);
                         return (
                             <>
                                 <Link

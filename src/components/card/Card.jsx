@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ movie }) => {
     const [isLoading, setIsLoading] = useState(true);
+    // console.log(movie)
 
     useEffect(() => {
         setTimeout(() => {

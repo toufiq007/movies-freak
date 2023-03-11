@@ -17,10 +17,10 @@ const Header = () => {
                         <NavLink to="movies/popular">Popular</NavLink>
                     </li>
                     <li>
-                        <NavLink to="movies/topRated">Top Rated</NavLink>
+                        <NavLink to="movies/top_rated">Top Rated</NavLink>
                     </li>
                     <li>
-                        <NavLink to="movies/upcomming">Upcoming</NavLink>
+                        <NavLink to="movies/upcoming">Upcoming</NavLink>
                     </li>
                 </ul>
             </nav>

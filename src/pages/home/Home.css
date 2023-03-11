@@ -41,7 +41,7 @@
 
 .card-container{
     width: 90%;
-    margin: auto;
+    margin: 5rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
